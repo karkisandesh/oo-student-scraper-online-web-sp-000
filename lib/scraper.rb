@@ -41,6 +41,7 @@ class Scraper
         scraped_student[:profile_quote] = html.css("h3.view-profile-text").text
         scraped_student[:bio] = html.css("div.bio-content p").text
     scraped_student
+    binding.pry
   end
 
 
