@@ -21,7 +21,6 @@ class Student
       self.send(("#{key}="), value)
       @@all << self
     end
-   
   end
 
   def self.all
