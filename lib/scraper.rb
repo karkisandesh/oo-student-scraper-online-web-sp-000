@@ -38,7 +38,7 @@ class Scraper
         scraped_student[:blog] = url if student.css("img").attribute("src").text.include?("rss")
     end
     
-        scraped_student[:profile_quote] = html.css("div").attribute(".profile-qoute").text
+        scraped_student[:profile_quote] = html.css("div.profile-qoute").text
         scraped_student[:bio] = html.css("div.bio-content p").text
     scraped_student
     binding.pry
