@@ -9,8 +9,9 @@ class Student
     student_hash.each do |key, value|
       self.send(("#{key}="), value)
       @@all << self
+      binding.pry
   end
-    binding.pry
+    
   end
 
   def self.create_from_collection(students_array)
