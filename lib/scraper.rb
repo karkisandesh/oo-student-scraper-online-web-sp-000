@@ -36,7 +36,6 @@ class Scraper
         scraped_student[:linkedin] = url if url.include?("linkedin")
         scraped_student[:github] = url if url.include?("github")
         scraped_student[:blog] = url if student.css("img").attribute("src").text.include?("rss")
-        binding.pry
     end
     
         scraped_student[:profile_quote] = html.css("div").text
